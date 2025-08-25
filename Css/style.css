@@ -1,0 +1,27 @@
+.navbar {
+    background-color: rgba(0, 1, 44, 0.836);
+    color: white;
+}
+
+.navbar .nav-link,
+.navbar .icon-link {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .icon-link:hover {
+    font-weight: bold;
+    color: #fff;
+}
+
+.activado {
+    border-bottom: #fff solid 1px;
+}
+
+.navbar .icon-link .bi {
+    margin-left: 30px;
+    font-size: 20px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
