@@ -82,3 +82,50 @@ body {
   box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
 
+.proyecto1, .proyecto2, .proyecto3 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.proyecto1 {
+  background-image: url("../img/img_2.png");
+}
+.proyecto2 {
+  background-image: url("../img/img_4.png");
+}
+.proyecto3 {
+  background-image: url("../img/img_6.png");
+}
+
+.proyecto1::before,
+.proyecto2::before,
+.proyecto3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.proyecto1::before {
+  background-image: url("../img/img_3.png");
+}
+.proyecto2::before {
+  background-image: url("../img/img_5.png");
+}
+.proyecto3::before {
+  background-image: url("../img/img_7.png");
+}
+
+.proyecto1:hover::before,
+.proyecto2:hover::before,
+.proyecto3:hover::before {
+  opacity: 1;
+}
+
