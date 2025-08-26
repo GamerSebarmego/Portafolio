@@ -29,57 +29,29 @@ body {
     transition: all 0.3s ease;
 }
 
-.texto_banner {
-  color: #1f2937;
-  padding: 1rem;
-  max-width: 700px;
-}
-
 .texto_banner .intro-tag {
-  display: inline-block;
-  background: #e0f2fe;
-  color: #0284c7;
-  padding: 0.5rem 1rem;
-  border-radius: 12px;
-  font-size: 1rem;
-  margin-bottom: 0.2rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 10px;
 }
 
-.texto_banner h1 {
-  font-size: 2.5rem;
-  line-height: 1.3;
-  font-weight: 700;
+.primary {
+  color: #007bff;
 }
 
-.texto_banner .primary {
-  color: #3b82f6;
-  font-weight: 700;
-}
-
-.texto_banner .secondary {
-  color: #10b981;
-  font-weight: 700;
+.secondary {
+  color: #ff5722;
 }
 
 .experience-card {
-  background: linear-gradient(135deg, #ef4444, #dc2626);
-  color: #fff;
-  border-radius: 12px;
-  padding: 0.6rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: #be0000;
+  border: 1px solid #ddd;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.experience-card h3 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin: 0;
 }
 
 .experience-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .proyecto1, .proyecto2, .proyecto3 {
@@ -129,3 +101,40 @@ body {
   opacity: 1;
 }
 
+.fondo_conocimiento {
+  background: linear-gradient(135deg, #f0f8ff 0%, #e6f0ff 100%);
+  padding: 50px 0;
+}
+
+.footer-custom {
+  background: linear-gradient(135deg, rgba(0, 1, 44, 0.95), rgba(10, 25, 80, 0.85));
+  box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.footer-link {
+  color: #ffffffc9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #4da6ff;
+  text-shadow: 0 0 5px #4da6ff;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #4da6ff;
+  transform: scale(1.2);
+  text-shadow: 0 0 12px #4da6ff;
+}
+
+.footer-bottom {
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 0.9rem;
+}
