@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="Css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!--Navegador-->
@@ -47,6 +49,102 @@
         </div>
     </div>
     </nav>
+    <!--Contenido-->
+    <div class="container-flui">
+        <!--Conocimiento-->
+        <div class="container-fluid my-5 fondo_conocimiento">
+        <div class="container text-center">
+            <h2 class="fw-bold text-black" style="font-size: 2.5rem; letter-spacing: 1px;">
+                🧠 Mis Conocimientos
+            </h2>
+            <div class="mx-auto" style="width: 10%; height: 4px; background-color: #0d6efd; border-radius: 2px; margin-top: 10px; margin-bottom: 15px;"></div>
+        </div>
+        <div class="container text-center text-black">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="infoPanel" class="text-center">
+                <i id="infoIcon" class="fa-solid fa-code fa-10x mb-3"></i>
+                <h3 id="infoTitle">Selecciona una tecnología</h3>
+                <p id="infoDesc">Aquí verás más información al seleccionarla.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+            <div class="p-3">
+                <div class="accordion" id="accordionExample">
+                <!-- FRONTEND -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFrontend" aria-expanded="true" aria-controls="collapseFrontend">
+                        🌐 Frontend
+                    </button>
+                    </h2>
+                    <div id="collapseFrontend" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body d-flex flex-wrap gap-3">
+                            <i class="devicon-html5-plain colored fs-1" onclick="mostrarInfo('html')"></i>
+                            <i class="devicon-css3-plain colored fs-1" onclick="mostrarInfo('css')"></i>
+                            <i class="devicon-javascript-plain colored fs-1" onclick="mostrarInfo('javascript')"></i>
+                            <i class="devicon-angularjs-plain colored fs-1" onclick="mostrarInfo('angularjs')"></i>
+                            <i class="devicon-bootstrap-plain colored fs-1" onclick="mostrarInfo('bootstrap')"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BACKEND -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBackend" aria-expanded="false" aria-controls="collapseBackend">
+                        ⚙️ Backend
+                    </button>
+                    </h2>
+                    <div id="collapseBackend" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex flex-wrap gap-3">
+                        <i class="devicon-java-plain colored fs-1" onclick="mostrarInfo('java')"></i>
+                        <i class="devicon-spring-plain colored fs-1" onclick="mostrarInfo('spring')"></i>
+                        <i class="devicon-csharp-plain colored fs-1" onclick="mostrarInfo('csharp')"></i>
+                        <i class="devicon-dotnetcore-plain colored fs-1" onclick="mostrarInfo('dotnet')"></i>
+                        <i class="devicon-python-plain colored fs-1" onclick="mostrarInfo('python')"></i>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- BASES DE DATOS -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDB" aria-expanded="false" aria-controls="collapseDB">
+                        🗄️ Bases de Datos
+                    </button>
+                    </h2>
+                    <div id="collapseDB" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex flex-wrap gap-3">
+                        <i class="devicon-mysql-plain colored fs-1" onclick="mostrarInfo('mysql')"></i>
+                        <i class="devicon-postgresql-plain colored fs-1" onclick="mostrarInfo('postgresql')"></i>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- CONTROL DE VERSIONES -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGit" aria-expanded="false" aria-controls="collapseGit">
+                        🛠️ Control de Versiones
+                    </button>
+                    </h2>
+                    <div id="collapseGit" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex flex-wrap gap-3">
+                        <i class="devicon-git-plain colored fs-1" onclick="mostrarInfo('git')"></i>
+                        <i class="devicon-github-original colored fs-1" onclick="mostrarInfo('github')"></i>
+                        <i class="devicon-gitlab-plain colored fs-1" onclick="mostrarInfo('gitlab')"></i>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </html>
